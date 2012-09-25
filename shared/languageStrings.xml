@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<languagestrings>
+	<string>
+		<en>Select the language you want to use.</en>
+		<de>Wähle die Sprache, welche du verwenden möchtest.</de>
+	</string>
+	<string>
+		<en>Register</en>
+		<de>Registrieren</de>
+	</string>
+	<string>
+		<en>Create an account to play on this server.</en>
+		<de>Erstelle einen Account um auf diesem Server zu spielen.</de>
+	</string>
+	<string>
+		<en>Password (verify)</en>
+		<de>Passwort (wiederholen)</de>
+	</string>
+	<string>
+		<en>Birth date</en>
+		<de>Geburtsdatum</de>
+	</string>
+	<string>
+		<en>Day</en>
+		<de>Tag</de>
+	</string>
+	<string>
+		<en>Month</en>
+		<de>Monat</de>
+	</string>
+	<string>
+		<en>Year</en>
+		<de>Jahr</de>
+	</string>
+	<string>
+		<en>January</en>
+		<de>Januar</de>
+	</string>
+	<string>
+		<en>February</en>
+		<de>Februar</de>
+	</string>
+	<string>
+		<en>March</en>
+		<de>März</de>
+	</string>
+	<string>
+		<en>May</en>
+		<de>Mai</de>
+	</string>
+	<string>
+		<en>June</en>
+		<de>Juni</de>
+	</string>
+	<string>
+		<en>July</en>
+		<de>Juli</de>
+	</string>
+	<string>
+		<en>October</en>
+		<de>Oktober</de>
+	</string>
+	<string>
+		<en>December</en>
+		<de>Dezember</de>
+	</string>
+	<string>
+		<en>Gender</en>
+		<de>Geschlecht</de>
+	</string>
+	<string>
+		<en>Male</en>
+		<de>Männlich</de>
+	</string>
+	<string>
+		<en>Female</en>
+		<de>Weiblich</de>
+	</string>
+	<string>
+		<en>Please select</en>
+		<de>Bitte auswählen</de>
+	</string>
+	<string>
+		<en>Back</en>
+		<de>Zurück</de>
+	</string>
+	<string>
+		<en>Register error</en>
+		<de>Registrierungsfehler</de>
+	</string>
+	<string>
+		<en>You have to enter a password!</en>
+		<de>Du musst ein Passwort eingeben!</de>
+	</string>
+	<string>
+		<en>You have to enter your birth date!</en>
+		<de>Du musst dein Geburtsdatum eingeben!</de>
+	</string>
+	<string>
+		<en>You have to select your gender!</en>
+		<de>Du musst dein Geschlecht auswählen!</de>
+	</string>
+	<string>
+		<en>The entered passwords do not match!</en>
+		<de>Die eingegebenen Passwörter stimmen nicht überein!</de>
+	</string>
+	<string>
+		<en>Something goes wrong... Try it again.</en>
+		<de>Irgendetwas ging schief... Versuche es erneut.</de>
+	</string>
+	<string>
+		<en>Cancel</en>
+		<de>Abbrechen</de>
+	</string>
+	<string>
+		<en>Login</en>
+		<de>Einloggen</de>
+	</string>
+	<string>
+		<en>Enter the password of your account.</en>
+		<de>Gebe das Passwort von deinem Account ein.</de>
+	</string>
+	<string>
+		<en>Password</en>
+		<de>Passwort</de>
+	</string>
+	<string>
+		<en>Login error</en>
+		<de>Anmeldefehler</de>
+	</string>
+	<string>
+		<en>You have to enter your password!</en>
+		<de>Du musst dein Passwort eingeben!</de>
+	</string>
+	<string>
+		<en>Login failed!\n\nPlease check your password!</en>
+		<de>Login fehlgeschlagen!\n\nBitte überprüe dein Passwort!</de>
+	</string>
+</languagestrings>

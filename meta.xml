@@ -1,0 +1,76 @@
+﻿<meta>
+	<info author="Programie" description="The GRG Server script" version="1" type="gamemode" />
+	
+	<!-- Files -->
+	<file src="shared/config.xml" download="true" />
+	<file src="shared/languageStrings.xml" download="true" />
+	
+	<!--
+		Server scripts
+	-->
+	<!-- Events -->
+	<script src="server/events/onClientKickRequest.lua" type="server" />
+	<script src="server/events/onClientResourceStarted.lua" type="server" />
+	<script src="server/events/onPlayerJoin.lua" type="server" />
+	<script src="server/events/onResourceStart.lua" type="server" />
+	<script src="server/events/onSubmitLogin.lua" type="server" />
+	<script src="server/events/onSubmitRegister.lua" type="server" />
+	
+	<!-- Functions -->
+	<script src="server/functions/connectMySQL.lua" type="server" />
+	<script src="server/functions/handlePlayerJoin.lua" type="server" />
+	<script src="server/functions/isDevMode.lua" type="server" />
+	<script src="server/functions/loadPlayer.lua" type="server" />
+	<script src="server/functions/registerCheck.lua" type="server" />
+	<script src="server/functions/startTutorial.lua" type="server" />
+	<script src="server/functions/translateString.lua" type="server" />
+	
+	<!-- Shared functions -->
+	<script src="shared/functions/getMonthName.lua" type="server" />
+	<script src="shared/functions/loadLanguageStrings.lua" type="server" />
+	<script src="shared/functions/readConfig.lua" type="server" />
+	<script src="shared/functions/translateStringToLanguage.lua" type="server" />
+	
+	<!--
+		Client scripts
+	-->
+	<!-- Events -->
+	<script src="client/events/onClientResourceStart.lua" type="client" />
+	<script src="client/events/onLoginDone.lua" type="client" />
+	<script src="client/events/onLoginRequest.lua" type="client" />
+	<script src="client/events/onRegisterDone.lua" type="client" />
+	<script src="client/events/onRegisterLanguageSelected.lua" type="client" />
+	<script src="client/events/onRegisterRequest.lua" type="client" />
+	
+	<!-- Functions -->
+	<script src="client/functions/createCenteredWindow.lua" type="client" />
+	<script src="client/functions/kickMe.lua" type="client" />
+	<script src="client/functions/translateString.lua" type="client" />
+	
+	<!-- GUI -->
+	<script src="client/gui/language.lua" type="client" />
+	<script src="client/gui/login.lua" type="client" />
+	<script src="client/gui/messageBox.lua" type="client" />
+	<script src="client/gui/register.lua" type="client" />
+	
+	<!-- Shared functions -->
+	<script src="shared/functions/getMonthName.lua" type="client" />
+	<script src="shared/functions/loadLanguageStrings.lua" type="client" />
+	<script src="shared/functions/readConfig.lua" type="client" />
+	<script src="shared/functions/translateStringToLanguage.lua" type="client" />
+	
+	<!-- Configuration -->
+	<settings>
+		<!-- Development mode MySQL database -->
+		<setting name="@mysql_dev_host" value="127.0.0.1" />
+		<setting name="@mysql_dev_database" value="grg_server_dev" />
+		<setting name="@mysql_dev_username" value="grg_server_dev" />
+		<setting name="@mysql_dev_password" value="5jEwD2n2DFxW7u6x" />
+		
+		<!-- Public mode MySQL database -->
+		<setting name="@mysql_public_host" value="127.0.0.1" />
+		<setting name="@mysql_public_database" value="grg_server" />
+		<setting name="@mysql_public_username" value="grg_server" />
+		<setting name="@mysql_public_password" value="9wLjVfZLJPHbnS5A" />
+	</settings>
+</meta>
