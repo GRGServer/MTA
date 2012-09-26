@@ -11,9 +11,9 @@
 		connectionData.password = get("mysql_public_password")
 		connectionData.database = get("mysql_public_database")
 	end
-	print("Connecting to MySQL server: " .. connectionData.username .. "@" .. connectionData.host .. "/" .. connectionData.database)
+	outputServerLog("Connecting to MySQL server: " .. connectionData.username .. "@" .. connectionData.host .. "/" .. connectionData.database)
 	mysqlConnection = mysql_connect(connectionData.host, connectionData.username, connectionData.password, connectionData.database)
 	if (not mysqlConnection) then
-		print("Error while connecting to mysql server!")
+		outputServerLog("Error while connecting to mysql server!")
 	end
 end

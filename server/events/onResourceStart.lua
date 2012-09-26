@@ -10,12 +10,17 @@ addEventHandler("onResourceStart", getResourceRootElement(getThisResource()),
 		
 		-- Check if the server is running in development mode
 		if (isDevMode()) then
-			print("Running in development mode")
+			outputServerLog("Running in development mode")
 		else
-			print("Running in public mode")
+			outputServerLog("Running in public mode")
 		end
 		
 		connectMySQL() -- Connect MySQL
+		
+		-- Set real time
+		local realtime = getRealTime()
+		setTime(realtime.hour, realtime.minute)
+		setMinuteDuration(60000)
 		
 		-- handle player join for already connected players
 		for index,player in ipairs(getElementsByType("player")) do

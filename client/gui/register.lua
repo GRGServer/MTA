@@ -63,9 +63,10 @@ function createRegisterWindow()
 	for month = 1, 12 do
 		guiComboBoxAddItem(birthDateMonthField, translateString(getMonthName(month)))
 	end
+	local time = getRealTime()
 	local birthDateYearField = guiCreateComboBox(maxLabelWidth + birthDateFieldWidths * 2 + 20, 130, birthDateFieldWidths, 200, translateString("Year"), false, registerWindow)
-	local birthDateStartingYear = 1900
-	local currentYear = 2012
+	local birthDateStartingYear = 1900 + time.year - 100
+	local currentYear = 1900 + time.year
 	for year = currentYear, birthDateStartingYear, -1 do
 		guiComboBoxAddItem(birthDateYearField, year)
 	end

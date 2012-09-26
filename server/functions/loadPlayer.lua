@@ -9,9 +9,10 @@ function loadPlayer(player)
 			playerVariables[playerName].userId = row.id
 			playerVariables[playerName].language = row.language
 			playerVariables[playerName].skin = row.skin
-			fadeCamera(player, false, 5)
+			fadeCamera(player, false, 3)
 			setTimer(
 				function()
+					showPlayerHudComponent(player, "all", true)
 					if (tonumber(row.inTutorial) ~= 0) then
 						startTutorial(player)
 					else
@@ -20,7 +21,7 @@ function loadPlayer(player)
 						fadeCamera(player, true, 3)
 					end
 				end
-			, 8000, 1)
+			, 4000, 1)
 		end
 	end
 end

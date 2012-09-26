@@ -5,6 +5,11 @@
 	<file src="shared/config.xml" download="true" />
 	<file src="shared/languageStrings.xml" download="true" />
 	
+	<!-- Maps -->
+	<map src="maps/lc_marcos_bistro.map" />
+	<map src="maps/ls_groovestreet_gangbase.map" />
+	<map src="maps/sf_fahrschule.map" />
+	
 	<!--
 		Server scripts
 	-->
@@ -26,7 +31,9 @@
 	<script src="server/functions/translateString.lua" type="server" />
 	
 	<!-- Shared functions -->
+	<script src="shared/functions/getClosestObject.lua" type="server" />
 	<script src="shared/functions/getMonthName.lua" type="server" />
+	<script src="shared/functions/hexToRGBA.lua" type="server" />
 	<script src="shared/functions/loadLanguageStrings.lua" type="server" />
 	<script src="shared/functions/readConfig.lua" type="server" />
 	<script src="shared/functions/translateStringToLanguage.lua" type="server" />

@@ -6,7 +6,7 @@ function createLanguageSelectionWindow(event)
 	
 	-- Create the window
 	local window = guiCreateWindow(0, 0, screenWidth, screenHeight, translateString("Select language"), false)
-	--guiWindowSetMovable(window, false)
+	guiWindowSetMovable(window, false)
 	guiWindowSetSizable(window, false)
 	
 	-- Labels
