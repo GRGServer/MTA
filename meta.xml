@@ -1,5 +1,5 @@
 ﻿<meta>
-	<info author="Programie" description="The GRG Server script" version="1" type="gamemode" />
+	<info author="Programie und EuqeeeN : )" description="The GRG Server script" version="1" type="gamemode" />
 	
 	<!-- Files -->
 	<file src="shared/cameraLocations.map" download="true" />
