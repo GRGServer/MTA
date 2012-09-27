@@ -83,29 +83,29 @@ function createRegisterWindow()
 	-- Add event handlers
 	addEventHandler("onClientGUIClick", registerButton,
 		function()
-			if (guiGetText(passwordField) == "") then
+			if guiGetText(passwordField) == "" then
 				createMessageBox(translateString("Register error"), translateString("You have to enter a password!"), nil, registerWindow)
 				return
 			end
-			if (guiComboBoxGetSelected(birthDateDayField) == -1 or guiComboBoxGetSelected(birthDateMonthField) == -1 or guiComboBoxGetSelected(birthDateYearField) == -1) then
+			if guiComboBoxGetSelected(birthDateDayField) == -1 or guiComboBoxGetSelected(birthDateMonthField) == -1 or guiComboBoxGetSelected(birthDateYearField) == -1 then
 				outputChatBox("Day: " .. guiComboBoxGetSelected(birthDateDayField), localPlayer)
 				outputChatBox("Month: " .. guiComboBoxGetSelected(birthDateMonthField), localPlayer)
 				outputChatBox("Year: " .. guiComboBoxGetSelected(birthDateYearField), localPlayer)
 				createMessageBox(translateString("Register error"), translateString("You have to enter your birth date!"), nil, registerWindow)
 				return
 			end
-			if (guiComboBoxGetSelected(genderField) == -1) then
+			if guiComboBoxGetSelected(genderField) == -1 then
 				createMessageBox(translateString("Register error"), translateString("You have to select your gender!"), nil, registerWindow)
 				return
 			end
-			if (guiGetText(passwordField) ~= guiGetText(passwordVerifyField)) then
+			if guiGetText(passwordField) ~= guiGetText(passwordVerifyField) then
 				createMessageBox(translateString("Register error"), translateString("The entered passwords do not match!"), nil, registerWindow)
 				return
 			end
 			local gender
-			if (guiComboBoxGetSelected(genderField) == 0) then
+			if guiComboBoxGetSelected(genderField) == 0 then
 				gender = "male"
-			elseif (guiComboBoxGetSelected(genderField) == 1) then
+			elseif guiComboBoxGetSelected(genderField) == 1 then
 				gender = "female"
 			end
 			triggerServerEvent("onSubmitRegister", localPlayer, language, guiGetText(passwordField), guiComboBoxGetSelected(birthDateDayField) + 1, guiComboBoxGetSelected(birthDateMonthField) + 1, currentYear - guiComboBoxGetSelected(birthDateYearField), gender)

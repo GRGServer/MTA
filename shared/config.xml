@@ -25,4 +25,21 @@
 			<skin>193</skin>
 		</female>
 	</defaultskins>
+	
+	<!-- Camera locations used for moving camera while login/register -->
+	<logincameramovements>
+		<group>
+			<location time="0" easingType="">ls1</location>
+			<location time="10000" easingType="OutQuad">ls2</location>
+		</group>
+		<group>
+			<location time="0">lspd1</location>
+			<location time="10000">lspd2</location>
+		</group>
+		<group>
+			<location time="0">ls_groovestreet_gangbase1</location>
+			<location time="10000" easingType="OutQuad">ls_groovestreet_gangbase2</location>
+			<location time="10000" easingType="InQuad">ls_groovestreet_gangbase3</location>
+		</group>
+	</logincameramovements>
 </config>

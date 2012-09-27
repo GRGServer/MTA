@@ -26,7 +26,7 @@ function createLoginWindow()
 	-- Add event handlers
 	addEventHandler("onClientGUIClick", loginButton,
 		function()
-			if (guiGetText(passwordField) == "") then
+			if guiGetText(passwordField) == "" then
 				createMessageBox(translateString("Login error"), translateString("You have to enter your password!"), nil, loginWindow)
 				return
 			end

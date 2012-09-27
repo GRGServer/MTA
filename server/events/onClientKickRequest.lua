@@ -1,4 +1,4 @@
-﻿-- onClientKickRequest event handler
+﻿--- onClientKickRequest event handler
 addEvent("onClientKickRequest", true)
 addEventHandler("onClientKickRequest", getRootElement(),
 	function()

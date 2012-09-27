@@ -2,6 +2,7 @@
 	<info author="Programie" description="The GRG Server script" version="1" type="gamemode" />
 	
 	<!-- Files -->
+	<file src="shared/cameraLocations.map" download="true" />
 	<file src="shared/config.xml" download="true" />
 	<file src="shared/languageStrings.xml" download="true" />
 	
@@ -17,7 +18,9 @@
 	<!-- Events -->
 	<script src="server/events/onClientKickRequest.lua" type="server" />
 	<script src="server/events/onClientResourceStarted.lua" type="server" />
+	<script src="server/events/onLoginReady.lua" type="server" />
 	<script src="server/events/onPlayerJoin.lua" type="server" />
+	<script src="server/events/onPlayerQuit.lua" type="server" />
 	<script src="server/events/onResourceStart.lua" type="server" />
 	<script src="server/events/onSubmitLogin.lua" type="server" />
 	<script src="server/events/onSubmitRegister.lua" type="server" />
@@ -33,6 +36,7 @@
 	
 	<!-- Shared functions -->
 	<script src="shared/functions/getClosestObject.lua" type="server" />
+	<script src="shared/functions/getMapElement.lua" type="server" />
 	<script src="shared/functions/getMonthName.lua" type="server" />
 	<script src="shared/functions/hexToRGBA.lua" type="server" />
 	<script src="shared/functions/loadLanguageStrings.lua" type="server" />
@@ -43,6 +47,8 @@
 		Client scripts
 	-->
 	<!-- Events -->
+	<script src="client/events/onCameraMoved.lua" type="client" />
+	<script src="client/events/onClientPreRender.lua" type="client" />
 	<script src="client/events/onClientResourceStart.lua" type="client" />
 	<script src="client/events/onLoginDone.lua" type="client" />
 	<script src="client/events/onLoginRequest.lua" type="client" />
@@ -53,6 +59,11 @@
 	<!-- Functions -->
 	<script src="client/functions/createCenteredWindow.lua" type="client" />
 	<script src="client/functions/kickMe.lua" type="client" />
+	<script src="client/functions/loadCameraLocations.lua" type="client" />
+	<script src="client/functions/moveCamera.lua" type="client" />
+	<script src="client/functions/moveCameraToLocation.lua" type="client" />
+	<script src="client/functions/moveCameraToNextGroupLocation.lua" type="client" />
+	<script src="client/functions/stopCamera.lua" type="client" />
 	<script src="client/functions/translateString.lua" type="client" />
 	
 	<!-- GUI -->

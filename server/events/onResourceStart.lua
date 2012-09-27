@@ -1,4 +1,4 @@
-﻿-- onResourceStart event handler
+﻿--- onResourceStart event handler
 addEventHandler("onResourceStart", getResourceRootElement(getThisResource()),
 	function()
 		-- Init global variables
@@ -9,7 +9,7 @@ addEventHandler("onResourceStart", getResourceRootElement(getThisResource()),
 		loadLanguageStrings() -- Load language strings
 		
 		-- Check if the server is running in development mode
-		if (isDevMode()) then
+		if isDevMode() then
 			outputServerLog("Running in development mode")
 		else
 			outputServerLog("Running in public mode")

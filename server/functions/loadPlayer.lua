@@ -9,19 +9,14 @@ function loadPlayer(player)
 			playerVariables[playerName].userId = row.id
 			playerVariables[playerName].language = row.language
 			playerVariables[playerName].skin = row.skin
-			fadeCamera(player, false, 3)
-			setTimer(
-				function()
-					showPlayerHudComponent(player, "all", true)
-					if (tonumber(row.inTutorial) ~= 0) then
-						startTutorial(player)
-					else
-						spawnPlayer(player, row.posX, row.posY, row.posZ, row.angle, row.skin, row.interior)
-						setCameraTarget(player)
-						fadeCamera(player, true, 3)
-					end
-				end
-			, 4000, 1)
+			showPlayerHudComponent(player, "all", true)
+			if (tonumber(row.inTutorial) ~= 0) then
+				startTutorial(player)
+			else
+				spawnPlayer(player, row.posX, row.posY, row.posZ, row.angle, row.skin, row.interior)
+				setCameraTarget(player)
+				fadeCamera(player, true, 2)
+			end
 		end
 	end
 end

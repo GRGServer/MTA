@@ -136,4 +136,12 @@
 		<en>Login failed!\n\nPlease check your password!</en>
 		<de>Login fehlgeschlagen!\n\nBitte überprüe dein Passwort!</de>
 	</string>
+	<string>
+		<en>%s joined the server</en>
+		<de>%s hat den Server betreten</de>
+	</string>
+	<string>
+		<en>%s left the server</en>
+		<de>%s hat den Server verlassen</de>
+	</string>
 </languagestrings>

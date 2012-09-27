@@ -1,4 +1,4 @@
-﻿-- onClientResourceStarted event handler
+﻿--- onClientResourceStarted event handler
 addEvent("onClientResourceStarted", true)
 addEventHandler("onClientResourceStarted", getRootElement(),
 	function()

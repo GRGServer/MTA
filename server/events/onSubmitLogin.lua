@@ -1,4 +1,4 @@
-﻿-- onSubmitLogin event handler
+﻿--- onSubmitLogin event handler
 addEvent("onSubmitLogin", true)
 addEventHandler("onSubmitLogin", getRootElement(),
 	function(password)
@@ -8,7 +8,6 @@ addEventHandler("onSubmitLogin", getRootElement(),
 		if (row) then
 			mysqlConnection:query("UPDATE `users` SET `loginTime` = NOW() WHERE `id` = '" .. row.id .. "'")
 			triggerClientEvent(source, "onLoginDone", getRootElement(), true)
-			loadPlayer(source)
 		else
 			triggerClientEvent(source, "onLoginDone", getRootElement(), false)
 		end
