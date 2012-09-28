@@ -30,7 +30,10 @@
 	<logincameramovements>
 		<group>
 			<location time="0" easingType="">ls1</location>
-			<location time="10000" easingType="OutQuad">ls2</location>
+			<location time="5000" easingType="Linear">ls2</location>
+			<location time="1000" easingType="Linear">ls3</location>
+			<location time="5000" easingType="Linear">ls4</location>
+			<location time="5000" easingType="Linear">ls5</location>
 		</group>
 		<group>
 			<location time="0">lspd1</location>

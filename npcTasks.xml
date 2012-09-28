@@ -1,0 +1,193 @@
+<sequences>
+    <sequence id="1" name="LC_Drive">
+        <task id="1">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-904.56518554688"></parameter>
+            <parameter id="3" type="number" value="455.36993408203"></parameter>
+            <parameter id="4" type="number" value="1346.875"></parameter>
+            <parameter id="5" type="number" value="-891.18688964844"></parameter>
+            <parameter id="6" type="number" value="456.54638671875"></parameter>
+            <parameter id="7" type="number" value="1346.875"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="2">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-891.18688964844"></parameter>
+            <parameter id="3" type="number" value="456.54638671875"></parameter>
+            <parameter id="4" type="number" value="1346.875"></parameter>
+            <parameter id="5" type="number" value="-840.373046875"></parameter>
+            <parameter id="6" type="number" value="456.93969726563"></parameter>
+            <parameter id="7" type="number" value="1352.0363769531"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="3">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-840.373046875"></parameter>
+            <parameter id="3" type="number" value="456.93969726563"></parameter>
+            <parameter id="4" type="number" value="1352.0363769531"></parameter>
+            <parameter id="5" type="number" value="-791.03863525391"></parameter>
+            <parameter id="6" type="number" value="455.87078857422"></parameter>
+            <parameter id="7" type="number" value="1361.7485351563"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="4">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-791.03863525391"></parameter>
+            <parameter id="3" type="number" value="455.87078857422"></parameter>
+            <parameter id="4" type="number" value="1361.7485351563"></parameter>
+            <parameter id="5" type="number" value="-777.86950683594"></parameter>
+            <parameter id="6" type="number" value="457.56973266602"></parameter>
+            <parameter id="7" type="number" value="1364.2578125"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="5">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-777.86950683594"></parameter>
+            <parameter id="3" type="number" value="457.56973266602"></parameter>
+            <parameter id="4" type="number" value="1364.2578125"></parameter>
+            <parameter id="5" type="number" value="-768.34088134766"></parameter>
+            <parameter id="6" type="number" value="460.31283569336"></parameter>
+            <parameter id="7" type="number" value="1366.1440429688"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="6">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-768.34088134766"></parameter>
+            <parameter id="3" type="number" value="460.31283569336"></parameter>
+            <parameter id="4" type="number" value="1366.1440429688"></parameter>
+            <parameter id="5" type="number" value="-759.57080078125"></parameter>
+            <parameter id="6" type="number" value="464.75305175781"></parameter>
+            <parameter id="7" type="number" value="1368.0369873047"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="7">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-759.57080078125"></parameter>
+            <parameter id="3" type="number" value="464.75305175781"></parameter>
+            <parameter id="4" type="number" value="1368.0369873047"></parameter>
+            <parameter id="5" type="number" value="-750.11706542969"></parameter>
+            <parameter id="6" type="number" value="470.94744873047"></parameter>
+            <parameter id="7" type="number" value="1369.9012451172"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="8">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-750.11706542969"></parameter>
+            <parameter id="3" type="number" value="470.94744873047"></parameter>
+            <parameter id="4" type="number" value="1369.9012451172"></parameter>
+            <parameter id="5" type="number" value="-741.81829833984"></parameter>
+            <parameter id="6" type="number" value="478.31463623047"></parameter>
+            <parameter id="7" type="number" value="1371.2420654297"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="9">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-741.81829833984"></parameter>
+            <parameter id="3" type="number" value="478.31463623047"></parameter>
+            <parameter id="4" type="number" value="1371.2420654297"></parameter>
+            <parameter id="5" type="number" value="-733.03540039063"></parameter>
+            <parameter id="6" type="number" value="489.00872802734"></parameter>
+            <parameter id="7" type="number" value="1371.9765625"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="10">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-733.03540039063"></parameter>
+            <parameter id="3" type="number" value="489.00872802734"></parameter>
+            <parameter id="4" type="number" value="1371.9765625"></parameter>
+            <parameter id="5" type="number" value="-732.35406494141"></parameter>
+            <parameter id="6" type="number" value="495.53314208984"></parameter>
+            <parameter id="7" type="number" value="1371.9718017578"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="11">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-732.35406494141"></parameter>
+            <parameter id="3" type="number" value="495.53314208984"></parameter>
+            <parameter id="4" type="number" value="1371.9718017578"></parameter>
+            <parameter id="5" type="number" value="-736.35430908203"></parameter>
+            <parameter id="6" type="number" value="500.70352172852"></parameter>
+            <parameter id="7" type="number" value="1371.9765625"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="12">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-736.35430908203"></parameter>
+            <parameter id="3" type="number" value="500.70352172852"></parameter>
+            <parameter id="4" type="number" value="1371.9765625"></parameter>
+            <parameter id="5" type="number" value="-742.21453857422"></parameter>
+            <parameter id="6" type="number" value="504.40142822266"></parameter>
+            <parameter id="7" type="number" value="1372.125"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="13">
+            <parameter id="1" type="string" value="driveAlongLine"></parameter>
+            <parameter id="2" type="number" value="-742.21453857422"></parameter>
+            <parameter id="3" type="number" value="504.40142822266"></parameter>
+            <parameter id="4" type="number" value="1372.125"></parameter>
+            <parameter id="5" type="number" value="-756.0791015625"></parameter>
+            <parameter id="6" type="number" value="507.84118652344"></parameter>
+            <parameter id="7" type="number" value="1371.7569580078"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+    </sequence>
+    <sequence id="2" name="LC_WalkToBistro">
+        <task id="1">
+            <parameter id="1" type="string" value="walkAlongLine"></parameter>
+            <parameter id="2" type="number" value="-756.29296875"></parameter>
+            <parameter id="3" type="number" value="506.24108886719"></parameter>
+            <parameter id="4" type="number" value="1371.7736816406"></parameter>
+            <parameter id="5" type="number" value="-760.67608642578"></parameter>
+            <parameter id="6" type="number" value="490.7571105957"></parameter>
+            <parameter id="7" type="number" value="1371.6766357422"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="2">
+            <parameter id="1" type="string" value="walkAlongLine"></parameter>
+            <parameter id="2" type="number" value="-760.67608642578"></parameter>
+            <parameter id="3" type="number" value="490.7571105957"></parameter>
+            <parameter id="4" type="number" value="1371.6766357422"></parameter>
+            <parameter id="5" type="number" value="-765.87725830078"></parameter>
+            <parameter id="6" type="number" value="490.85229492188"></parameter>
+            <parameter id="7" type="number" value="1371.6384277344"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="3">
+            <parameter id="1" type="string" value="walkAlongLine"></parameter>
+            <parameter id="2" type="number" value="-765.87725830078"></parameter>
+            <parameter id="3" type="number" value="490.85229492188"></parameter>
+            <parameter id="4" type="number" value="1371.6384277344"></parameter>
+            <parameter id="5" type="number" value="-765.85546875"></parameter>
+            <parameter id="6" type="number" value="505.21997070313"></parameter>
+            <parameter id="7" type="number" value="1376.5556640625"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="2"></parameter>
+        </task>
+        <task id="4">
+            <parameter id="1" type="string" value="walkAlongLine"></parameter>
+            <parameter id="2" type="number" value="-765.87194824219"></parameter>
+            <parameter id="3" type="number" value="505.23309326172"></parameter>
+            <parameter id="4" type="number" value="1376.5557861328"></parameter>
+            <parameter id="5" type="number" value="-778.08953857422"></parameter>
+            <parameter id="6" type="number" value="505.05661010742"></parameter>
+            <parameter id="7" type="number" value="1376.5946044922"></parameter>
+            <parameter id="8" type="number" value="2"></parameter>
+            <parameter id="9" type="number" value="1"></parameter>
+        </task>
+    </sequence>
+</sequences>

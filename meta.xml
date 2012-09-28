@@ -1,5 +1,8 @@
 ﻿<meta>
-	<info author="Programie und EuqeeeN : )" description="The GRG Server script" version="1" type="gamemode" />
+	<info author="GRG Team" description="The GRG Server script" version="1" type="gamemode" />
+	
+	<!-- Required resources -->
+	<include resource="npc_hlc" />
 	
 	<!-- Files -->
 	<file src="shared/cameraLocations.map" download="true" />
@@ -18,9 +21,11 @@
 		Server scripts
 	-->
 	<!-- Events -->
+	<script src="server/events/onCameraMoved.lua" type="server" />
 	<script src="server/events/onClientKickRequest.lua" type="server" />
 	<script src="server/events/onClientResourceStarted.lua" type="server" />
 	<script src="server/events/onLoginReady.lua" type="server" />
+	<script src="server/events/onNPCSequenceDone.lua" type="server" />
 	<script src="server/events/onPlayerJoin.lua" type="server" />
 	<script src="server/events/onPlayerQuit.lua" type="server" />
 	<script src="server/events/onResourceStart.lua" type="server" />
@@ -29,11 +34,17 @@
 	
 	<!-- Functions -->
 	<script src="server/functions/connectMySQL.lua" type="server" />
+	<script src="server/functions/createNPC.lua" type="server" />
 	<script src="server/functions/handlePlayerJoin.lua" type="server" />
 	<script src="server/functions/isDevMode.lua" type="server" />
+	<script src="server/functions/loadNPCTasks.lua" type="server" />
 	<script src="server/functions/loadPlayer.lua" type="server" />
+	<script src="server/functions/moveCamera.lua" type="server" />
+	<script src="server/functions/moveCameraToLocation.lua" type="server" />
 	<script src="server/functions/registerCheck.lua" type="server" />
+	<script src="server/functions/setNPCTaskSequence.lua" type="server" />
 	<script src="server/functions/startTutorial.lua" type="server" />
+	<script src="server/functions/stopCamera.lua" type="server" />
 	<script src="server/functions/translateString.lua" type="server" />
 	
 	<!-- Shared functions -->
@@ -41,6 +52,7 @@
 	<script src="shared/functions/getMapElement.lua" type="server" />
 	<script src="shared/functions/getMonthName.lua" type="server" />
 	<script src="shared/functions/hexToRGBA.lua" type="server" />
+	<script src="shared/functions/loadCameraLocations.lua" type="server" />
 	<script src="shared/functions/loadLanguageStrings.lua" type="server" />
 	<script src="shared/functions/readConfig.lua" type="server" />
 	<script src="shared/functions/translateStringToLanguage.lua" type="server" />
@@ -54,14 +66,15 @@
 	<script src="client/events/onClientResourceStart.lua" type="client" />
 	<script src="client/events/onLoginDone.lua" type="client" />
 	<script src="client/events/onLoginRequest.lua" type="client" />
+	<script src="client/events/onMoveCamera.lua" type="client" />
 	<script src="client/events/onRegisterDone.lua" type="client" />
 	<script src="client/events/onRegisterLanguageSelected.lua" type="client" />
 	<script src="client/events/onRegisterRequest.lua" type="client" />
+	<script src="client/events/onStopCamera.lua" type="client" />
 	
 	<!-- Functions -->
 	<script src="client/functions/createCenteredWindow.lua" type="client" />
 	<script src="client/functions/kickMe.lua" type="client" />
-	<script src="client/functions/loadCameraLocations.lua" type="client" />
 	<script src="client/functions/moveCamera.lua" type="client" />
 	<script src="client/functions/moveCameraToLocation.lua" type="client" />
 	<script src="client/functions/moveCameraToNextGroupLocation.lua" type="client" />
@@ -76,6 +89,7 @@
 	
 	<!-- Shared functions -->
 	<script src="shared/functions/getMonthName.lua" type="client" />
+	<script src="shared/functions/loadCameraLocations.lua" type="client" />
 	<script src="shared/functions/loadLanguageStrings.lua" type="client" />
 	<script src="shared/functions/readConfig.lua" type="client" />
 	<script src="shared/functions/translateStringToLanguage.lua" type="client" />
@@ -94,4 +108,7 @@
 		<setting name="@mysql_public_username" value="grg_server" />
 		<setting name="@mysql_public_password" value="9wLjVfZLJPHbnS5A" />
 	</settings>
+	
+	<!-- Additional resource configuration -->
+	<min_mta_version client="1.3.0-9.04491" />
 </meta>

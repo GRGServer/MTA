@@ -12,4 +12,5 @@
 			end
 		end
 	end
+	xmlUnloadFile(xml)
 end

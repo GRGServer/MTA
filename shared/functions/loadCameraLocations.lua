@@ -1,6 +1,7 @@
 --- Load all camera locations from shared/cameraLocations.map
 function loadCameraLocations()
-	local xmlNodes = xmlNodeGetChildren(xmlLoadFile("shared/cameraLocations.map"))
+	local xml = xmlLoadFile("shared/cameraLocations.map")
+	local xmlNodes = xmlNodeGetChildren(xml)
 	for index, node in pairs(xmlNodes) do
 		local attributes = xmlNodeGetAttributes(node)
 		local name
@@ -22,4 +23,5 @@ function loadCameraLocations()
 			cameraLocationsTable[name].lookZ = attributes.posZ
 		end
 	end
+	xmlUnloadFile(xml)
 end

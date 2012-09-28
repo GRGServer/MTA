@@ -3,10 +3,13 @@ addEventHandler("onResourceStart", getResourceRootElement(getThisResource()),
 	function()
 		-- Init global variables
 		languageStrings = {} -- Table used for language strings (One sub table for each translated string)
+		cameraLocationsTable = {} -- Table used for camera locations (One sub table for each location containing camera position and lookat position)
 		playerVariables = {} -- Table used for player specific data like userId or language (One sub table for each player)
 		
 		configXmlRootNode = xmlLoadFile("shared/config.xml") -- Load shared configuration
 		loadLanguageStrings() -- Load language strings
+		loadCameraLocations() -- Load camera locations
+		loadNPCTasks() -- Load NPC tasks
 		
 		-- Check if the server is running in development mode
 		if isDevMode() then

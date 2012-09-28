@@ -4,10 +4,10 @@ addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource(
 		-- Init global variables
 		languageStrings = {} -- Table used for language strings (One sub table for each translated string)
 		cameraLocationsTable = {} -- Table used for camera locations (One sub table for each location containing camera position and lookat position)
+		localConfiguration = {} -- Table used for local configuration data like language
 		
 		configXmlRootNode = xmlLoadFile("shared/config.xml") -- Load shared configuration
 		loadLanguageStrings() -- Load language strings
-		language = readConfig("defaultlanguage") -- Read default language
 		
 		loadCameraLocations() -- Load camera locations
 		triggerServerEvent("onClientResourceStarted", localPlayer) -- Send the "I'm ready" event back to the server
@@ -22,6 +22,6 @@ addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource(
 				table.insert(locationGroups[groupIndex], {name = xmlNodeGetValue(locationNode), time = xmlNodeGetAttribute(locationNode, "time"), easingType = xmlNodeGetAttribute(locationNode, "easingType")})
 			end
 		end
-		moveCameraToNextGroupLocation(locationGroups, "loginRegisterMovements")
+		moveCameraToNextGroupLocation(locationGroups, {loginRegisterMovements = true})
 	end
 )

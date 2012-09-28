@@ -1,7 +1,7 @@
 --- Move the camera to the next location in the group or another random group if the last location has been already shown (Or no location was shown yet)
 -- @param groups Table containing all location groups with their locations as sub elements
--- @param ... Additional parameters which will be passed to the onCameraMoved event
-function moveCameraToNextGroupLocation(groups, ...)
+-- @param extraData Additional data which will be passed to the onCameraMoved event
+function moveCameraToNextGroupLocation(groups, extraData)
 	local fadeInTime
 	local fadeOutTime
 	if moveCameraGroupIndex == nil or moveCameraGroupLocationIndex == nil or moveCameraGroupLocationIndex >= #groups[moveCameraGroupIndex] then -- This is the first location in the group or no location/group has been selected yet
@@ -24,5 +24,10 @@ function moveCameraToNextGroupLocation(groups, ...)
 	if stopGroupCameraMovements and (fadeInTime or fadeOutTime) then
 		return
 	end
-	moveCameraToLocation(groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].name, groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].time, groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].easingType, fadeInTime, fadeOutTime, "moveCameraToNextGroupLocation", groups, ...)
+	
+	if extraData == nil then
+		extraData = {}
+	end
+	extraData.moveCameraToNextGroupLocation = groups
+	moveCameraToLocation(groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].name, groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].time, groups[moveCameraGroupIndex][moveCameraGroupLocationIndex].easingType, fadeInTime, fadeOutTime, extraData)
 end
