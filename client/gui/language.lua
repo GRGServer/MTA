@@ -26,7 +26,7 @@ function createLanguageSelectionWindow(event)
 	local languageSelection = guiCreateComboBox(10, positionY, maxWidth, 80, "", false, window)
 	for index, node in pairs(languageNodes) do
 		guiComboBoxAddItem(languageSelection, xmlNodeGetValue(node))
-		if xmlNodeGetName(node) == language then
+		if xmlNodeGetName(node) == getElementData(localPlayer, "language") then
 			guiComboBoxSetSelected(languageSelection, index - 1)
 		end
 	end

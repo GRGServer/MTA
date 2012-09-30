@@ -6,9 +6,10 @@ function loadPlayer(player)
 	if (mysqlResult) then
 		local row = mysqlResult:fetch_assoc()
 		if (row) then
-			playerVariables[playerName].userId = row.id
-			playerVariables[playerName].language = row.language
-			playerVariables[playerName].skin = row.skin
+			setElementData(player, "userId", row.id, false)
+			setElementData(player, "language", row.language, true)
+			setElementData(player, "chatChannel", row.chatChannel, false)
+			setElementData(player, "skin", row.skin, false)
 			showPlayerHudComponent(player, "all", true)
 			if (tonumber(row.inTutorial) ~= 0) then
 				startTutorial(player)

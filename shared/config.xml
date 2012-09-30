@@ -1,6 +1,6 @@
 <config>
 	<!-- Define the default language which should be used if the language can not be detected or the client uses an invalid language -->
-	<defaultlanguage>de</defaultlanguage>
+	<defaultLanguage>de</defaultLanguage>
 	
 	<!-- Define available languages -->
 	<languages>
@@ -45,4 +45,15 @@
 			<location time="10000" easingType="InQuad">ls_groovestreet_gangbase3</location>
 		</group>
 	</logincameramovements>
+	
+	<!-- Chat configuration -->
+	<chat>
+		<defaultChannel>ALL</defaultChannel>
+		<format>
+			<all>#FFFFFF[#00C000%playername%@%channel%#FFFFFF] %message%</all>
+			<range>#FFFFFF[#00C000%playername%#FFFFFF] %message%</range>
+			<action>#00FF00 *%playername% %message%</action>
+		</format>
+		<rangeRadius>50</rangeRadius>
+	</chat>
 </config>

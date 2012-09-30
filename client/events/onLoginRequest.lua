@@ -2,8 +2,7 @@
 -- Triggered as soon as the player should login
 addEvent("onLoginRequest", true)
 addEventHandler("onLoginRequest", getRootElement(),
-	function(basicUserData)
-		localConfiguration = basicUserData
+	function()
 		createLoginWindow()
 	end
 )

@@ -2,8 +2,7 @@
 -- Triggered as soon as the player should register
 addEvent("onRegisterRequest", true)
 addEventHandler("onRegisterRequest", getRootElement(),
-	function(basicUserData)
-		localConfiguration = basicUserData
+	function()
 		createLanguageSelectionWindow("onRegisterLanguageSelected")
 	end
 )
