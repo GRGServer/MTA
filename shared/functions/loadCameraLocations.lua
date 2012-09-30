@@ -13,6 +13,7 @@ function loadCameraLocations()
 			cameraLocationsTable[name].posX = attributes.posX
 			cameraLocationsTable[name].posY = attributes.posY
 			cameraLocationsTable[name].posZ = attributes.posZ
+			cameraLocationsTable[name].interior = attributes.interior
 		elseif string.sub(attributes.id, -7) == "_lookat" then
 			name = string.sub(attributes.id, 1, -8)
 			if cameraLocationsTable[name] == nil then
@@ -21,6 +22,7 @@ function loadCameraLocations()
 			cameraLocationsTable[name].lookX = attributes.posX
 			cameraLocationsTable[name].lookY = attributes.posY
 			cameraLocationsTable[name].lookZ = attributes.posZ
+			cameraLocationsTable[name].interior = attributes.interior
 		end
 	end
 	xmlUnloadFile(xml)

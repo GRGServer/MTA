@@ -10,4 +10,6 @@ function handlePlayerJoin(player)
 		end
 	end
 	showPlayerHudComponent(player, "all", false)
+	setElementDimension(player, 0)
+	setElementInterior(player, 0)
 end

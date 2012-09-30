@@ -50,8 +50,8 @@ function moveCamera(startPosX, startPosY, startPosZ, startLookX, startLookY, sta
 	-- Create dummy objects
 	moveCameraValues.positionObject = createObject(1598, startPosX, startPosY, startPosZ, 0, 0, 0)
 	moveCameraValues.lookAtObject = createObject(1598, startLookX, startLookY, startLookZ, 0, 0, 0)
-	setElementDimension(moveCameraValues.positionObject, 1)
-	setElementDimension(moveCameraValues.lookAtObject, 1)
+	setElementDimension(moveCameraValues.positionObject, 10000)
+	setElementDimension(moveCameraValues.lookAtObject, 10000)
 	
 	-- Move dummy objects
 	moveObject(moveCameraValues.positionObject, time, endPosX, endPosY, endPosZ, 0, 0, 0, easingType or "Linear")

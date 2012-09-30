@@ -22,6 +22,7 @@ function moveCameraToLocation(name, time, easingType, fadeInTime, fadeOutTime, e
 		triggerEvent("onCameraMoved", getRootElement(), extraData)
 	else
 		local currentPosX, currentPosY, currentPosZ, currentLookX, currentLookY, currentLookZ = getCameraMatrix()
+		setElementInterior(localPlayer, cameraLocationsTable[name].interior)
 		moveCamera(currentPosX, currentPosY, currentPosZ, currentLookX, currentLookY, currentLookZ, cameraLocationsTable[name].posX, cameraLocationsTable[name].posY, cameraLocationsTable[name].posZ, cameraLocationsTable[name].lookX, cameraLocationsTable[name].lookY, cameraLocationsTable[name].lookZ, time, easingType, fadeInTime, fadeOutTime, extraData)
 	end
 end

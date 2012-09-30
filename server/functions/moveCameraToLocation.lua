@@ -25,6 +25,7 @@ function moveCameraToLocation(player, name, time, easingType, fadeInTime, fadeOu
 			extraData = {}
 		end
 		extraData.moveCameraToLocation = name
+		setElementInterior(player, cameraLocationsTable[name].interior)
 		moveCamera(player, nil, nil, nil, nil, nil, nil, cameraLocationsTable[name].posX, cameraLocationsTable[name].posY, cameraLocationsTable[name].posZ, cameraLocationsTable[name].lookX, cameraLocationsTable[name].lookY, cameraLocationsTable[name].lookZ, time, easingType, fadeInTime, fadeOutTime, extraData)
 	end
 end
