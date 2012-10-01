@@ -1,4 +1,4 @@
---- Load all camera locations from shared/cameraLocations.map
+﻿--- Load all camera locations from shared/cameraLocations.map
 function loadCameraLocations()
 	local xml = xmlLoadFile("shared/cameraLocations.map")
 	local xmlNodes = xmlNodeGetChildren(xml)

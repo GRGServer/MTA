@@ -1,4 +1,4 @@
---- onCameraMoved event handler
+﻿--- onCameraMoved event handler
 addEvent("onCameraMoved")
 addEventHandler("onCameraMoved", getRootElement(),
 	function(extraData)

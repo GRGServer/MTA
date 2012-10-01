@@ -1,4 +1,4 @@
---- Create a Ped and assign tasks
+﻿--- Create a Ped and assign tasks
 -- @param sequenceName The sequence of tasks which should be executed by the Ped
 -- @param modelId Model ID for the Ped
 -- @param posX Position X-coordinate for the initial spawn (Only used for tasks without start position)

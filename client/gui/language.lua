@@ -12,7 +12,7 @@ function createLanguageSelectionWindow(event)
 	-- Labels
 	local positionY = 30
 	local maxWidth = 0
-	for index,node in pairs(languageNodes) do
+	for index, node in pairs(languageNodes) do
 		local label = guiCreateLabel(10, positionY, 330, 20, translateStringToLanguage("Select the language you want to use.", xmlNodeGetName(node)), false, window)
 		local labelWidth = guiLabelGetTextExtent(label)
 		guiSetSize(label, labelWidth, 20, false)
@@ -30,7 +30,7 @@ function createLanguageSelectionWindow(event)
 			guiComboBoxSetSelected(languageSelection, index - 1)
 		end
 	end
-	if (guiComboBoxGetSelected(languageSelection) == -1) then
+	if guiComboBoxGetSelected(languageSelection) == -1 then
 		guiComboBoxSetSelected(languageSelection, 0)
 	end
 	positionY = positionY + 40

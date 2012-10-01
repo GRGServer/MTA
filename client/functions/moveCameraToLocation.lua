@@ -1,4 +1,4 @@
---- Move the camera to a location
+﻿--- Move the camera to a location
 -- @param name The location name
 -- @param time Time in milliseconds to move to the new position
 -- @param easingType Easing function to use (Set to nil to use Linear)

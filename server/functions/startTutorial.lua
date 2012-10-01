@@ -1,4 +1,4 @@
---- Starts the tutorial for the specified player
+﻿--- Starts the tutorial for the specified player
 -- @param player The player for which the tutorial should start
 function startTutorial(player)
 	local playerName = getPlayerName(player)

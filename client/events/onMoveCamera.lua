@@ -1,4 +1,4 @@
---- onMoveCamera event handler
+﻿--- onMoveCamera event handler
 -- Primary used to let the server move the players camera
 addEvent("onMoveCamera", true)
 addEventHandler("onMoveCamera", getRootElement(),

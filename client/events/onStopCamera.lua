@@ -1,4 +1,4 @@
---- onStopCamera event handler
+﻿--- onStopCamera event handler
 -- Primary used to let the server stop the camera from moving started using the moveCamera function
 addEvent("onStopCamera", true)
 addEventHandler("onStopCamera", getRootElement(),

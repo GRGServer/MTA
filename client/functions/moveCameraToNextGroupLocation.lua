@@ -1,4 +1,4 @@
---- Move the camera to the next location in the group or another random group if the last location has been already shown (Or no location was shown yet)
+﻿--- Move the camera to the next location in the group or another random group if the last location has been already shown (Or no location was shown yet)
 -- @param groups Table containing all location groups with their locations as sub elements
 -- @param extraData Additional data which will be passed to the onCameraMoved event
 function moveCameraToNextGroupLocation(groups, extraData)

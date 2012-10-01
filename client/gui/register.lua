@@ -31,13 +31,13 @@ function createRegisterWindow()
 	
 	-- Find longes label
 	local maxLabelWidth = passwordLabelWidth
-	if (passwordVerifyLabelWidth > maxLabelWidth) then
+	if passwordVerifyLabelWidth > maxLabelWidth then
 		maxLabelWidth = passwordVerifyLabelWidth
 	end
-	if (birthDateLabelWidth > maxLabelWidth) then
+	if birthDateLabelWidth > maxLabelWidth then
 		maxLabelWidth = birthDateLabelWidth
 	end
-	if (genderLabelWidth > maxLabelWidth) then
+	if genderLabelWidth > maxLabelWidth then
 		maxLabelWidth = genderLabelWidth
 	end
 	
@@ -109,7 +109,6 @@ function createRegisterWindow()
 				gender = "female"
 			end
 			triggerServerEvent("onSubmitRegister", localPlayer, language, guiGetText(passwordField), guiComboBoxGetSelected(birthDateDayField) + 1, guiComboBoxGetSelected(birthDateMonthField) + 1, currentYear - guiComboBoxGetSelected(birthDateYearField), gender)
-			destroyElement(registerWindow)
 		end
 	, false)
 	addEventHandler("onClientGUIClick", backButton,

@@ -1,4 +1,4 @@
---- Log the chat message in the database table 'chatogs'
+﻿--- Log the chat message in the database table 'chatogs'
 -- @param userId The ID of the user which sent the message
 -- @param targetUserId If the message was a private message set this to the user ID of the target player, otherwise set to 0 or nil
 -- @param channel The name of the channel to which the message has been sent (e.g. ALL or RANGE)

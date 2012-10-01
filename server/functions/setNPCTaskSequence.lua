@@ -1,4 +1,4 @@
---- Set the task sequence for a NPC
+﻿--- Set the task sequence for a NPC
 -- @param ped The Ped which should execute the task sequence
 -- @param sequenceName The name of the sequence
 function setNPCTaskSequence(ped, sequenceName)

@@ -1,4 +1,4 @@
---- onPlayerQuit event handler
+﻿--- onPlayerQuit event handler
 addEventHandler("onPlayerQuit", getRootElement(),
 	function(quitType, reason, responsibleElement)
 		local playerName = getPlayerName(source)

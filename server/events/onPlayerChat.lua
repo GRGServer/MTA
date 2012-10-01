@@ -1,4 +1,4 @@
---- onPlayerChat event handler
+﻿--- onPlayerChat event handler
 addEventHandler("onPlayerChat", getRootElement(),
 	function(message, messageType)
 		cancelEvent() -- We want to handle chat messages in our own way

@@ -1,4 +1,4 @@
---- Move the camera of a player using clientside camera moving functions
+﻿--- Move the camera of a player using clientside camera moving functions
 -- onPlayerCameraMoved will be triggered as soon as the camera has been moved to the target position
 -- @param player The player for which the camera should be moved
 -- @param startPosX Start position X-coordinate (Set to nil to use current camera position)

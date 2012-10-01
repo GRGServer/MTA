@@ -1,4 +1,4 @@
-<config>
+﻿<config>
 	<!-- Define the default language which should be used if the language can not be detected or the client uses an invalid language -->
 	<defaultLanguage>de</defaultLanguage>
 	
@@ -11,10 +11,10 @@
 	<!-- Default skins (Randomly selected after register)-->
 	<defaultSkins>
 		<male>
-			<skin>2</skin>
-			<skin>6</skin>
 			<skin>7</skin>
 			<skin>21</skin>
+			<skin>23</skin>
+			<skin>25</skin>
 			<skin>98</skin>
 		</male>
 		<female>

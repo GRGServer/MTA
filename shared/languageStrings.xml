@@ -144,4 +144,8 @@
 		<en>%s left the server</en>
 		<de>%s hat den Server verlassen</de>
 	</string>
+	<string>
+		<en>You have not the permission to use this function!</en>
+		<de>Du hast nicht die Berechtigung um diese Funktion zu verwenden!</de>
+	</string>
 </languagestrings>

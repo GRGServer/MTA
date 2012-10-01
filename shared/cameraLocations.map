@@ -1,4 +1,4 @@
-<map edf:definitions="editor_main">
+﻿<map edf:definitions="editor_main">
 	<object id="ls_groovestreet_gangbase1_position" interior="0" collisions="true" alpha="255" doublesided="false" model="1253" scale="1" dimension="0" posX="2433.52734375" posY="-1579.8073730469" posZ="48.940208435059" rotX="0" rotY="0" rotZ="0"></object>
 	<object id="ls_groovestreet_gangbase1_lookat" interior="0" collisions="true" alpha="255" doublesided="false" model="1253" scale="1" dimension="0" posX="2485.2092285156" posY="-1659.3372802734" posZ="17.020057678223" rotX="0" rotY="0" rotZ="0"></object>
 	<object id="ls_groovestreet_gangbase2_lookat" interior="0" collisions="true" alpha="255" doublesided="false" model="1253" scale="1" dimension="0" posX="2463.5981445313" posY="-1659.1125488281" posZ="12.604090690613" rotX="0" rotY="0" rotZ="0"></object>

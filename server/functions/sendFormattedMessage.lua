@@ -1,4 +1,4 @@
---- Send a formatted message
+﻿--- Send a formatted message
 -- @param text The text containing format strings
 -- @param formatStrings A table containing all format strings (formatstring = text to replace)
 -- @param visibleTo This specifies who can see the message

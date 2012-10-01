@@ -1,4 +1,4 @@
---- Move the players camera to a location
+﻿--- Move the players camera to a location
 -- @param player The player for which the camera should be moved
 -- @param name The location name
 -- @param time Time in milliseconds to move to the new position

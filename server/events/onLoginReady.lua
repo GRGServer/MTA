@@ -1,4 +1,4 @@
---- onLoginReady event handler
+﻿--- onLoginReady event handler
 addEvent("onLoginReady", true)
 addEventHandler("onLoginReady", getRootElement(),
 	function()

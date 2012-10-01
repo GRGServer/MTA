@@ -1,4 +1,4 @@
---- onClientPreRender event handler
+﻿--- onClientPreRender event handler
 addEventHandler("onClientPreRender", getRootElement(),
 	function()
 		if moveCameraValues ~= nil and moveCameraValues.positionObject ~= nil and isElement(moveCameraValues.positionObject) and moveCameraValues.lookAtObject ~= nil and isElement(moveCameraValues.lookAtObject) then

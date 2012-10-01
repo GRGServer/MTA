@@ -1,4 +1,4 @@
---- onCameraMoved
+﻿--- onCameraMoved
 -- Triggered by the client once the camera movement finished (Only if triggered by the server)
 addEvent("onCameraMoved", true)
 addEventHandler("onCameraMoved", getRootElement(),

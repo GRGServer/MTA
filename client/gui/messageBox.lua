@@ -4,7 +4,7 @@
 -- @param event The event which should be triggered as soon as the player closes the message box
 -- @param parentWindow The parent window which should be disabled while the message box is visible
 function createMessageBox(title, content, event, parentWindow)
-	if (parentWindow) then
+	if parentWindow then
 		guiSetEnabled(parentWindow, false) -- Disable parent window
 	end
 	
@@ -23,7 +23,7 @@ function createMessageBox(title, content, event, parentWindow)
 		local width = guiLabelGetTextExtent(contentLabel)
 		local height = guiLabelGetFontHeight(contentLabel)
 		guiSetSize(contentLabel, width, height, false)
-		if (width > windowWidth) then
+		if width > windowWidth then
 			windowWidth = width
 		end
 		widthHeight = widthHeight + height + 10
@@ -41,10 +41,10 @@ function createMessageBox(title, content, event, parentWindow)
 	addEventHandler("onClientGUIClick", okButton,
 		function()
 			destroyElement(window)
-			if (parentWindow) then
+			if parentWindow then
 				guiSetEnabled(parentWindow, true) -- Enable parent window
 			end
-			if (event) then
+			if event then
 				triggerEvent(event, getRootElement())
 			end
 		end

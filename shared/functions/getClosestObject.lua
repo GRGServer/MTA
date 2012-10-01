@@ -1,4 +1,4 @@
---- Get the closest object
+﻿--- Get the closest object
 -- @param posX X-coordinate of the location
 -- @param posY Y-coordinate of the location
 -- @param posZ Z-coordinate of the location

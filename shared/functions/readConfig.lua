@@ -1,6 +1,6 @@
 ﻿--- Read a configuration string from the shared configuration file
 -- @param path The dotted path to the configuration value (e.g. myConfigNode.subNode.myValue)
--- @return The configuration value
+-- @return A table containing all child nodes or the node value if there are no child nodes
 function readConfig(path)
 	path = split(path, ".")
 	local node = configXmlRootNode

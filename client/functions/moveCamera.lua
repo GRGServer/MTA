@@ -1,4 +1,4 @@
---- Move the camera to the specific position
+﻿--- Move the camera to the specific position
 -- onCameraMoved will be triggered as soon as the camera has been moved to the target position
 -- @param startPosX Start position X-coordinate (Set to nil to use current camera position)
 -- @param startPosY Start position Y-coordinate (Set to nil to use current camera position)

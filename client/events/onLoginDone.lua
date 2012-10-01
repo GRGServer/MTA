@@ -1,4 +1,4 @@
---- onLoginDone event handler
+﻿--- onLoginDone event handler
 -- Triggered as soon as the player register process has been completed
 -- A parameter gets passed to this event saying if the register was successful (true) or not (false)
 addEvent("onLoginDone", true)
