@@ -13,7 +13,7 @@ addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource(
 		
 		-- Random camera movements while login/register
 		local locationGroups = {}
-		local groups = xmlNodeGetChildren(xmlFindChild(configXmlRootNode, "logincameramovements", 0))
+		local groups = readConfig("loginCameraMovements")
 		for groupIndex, groupNode in pairs(groups) do
 			locationGroups[groupIndex] = {}
 			local locations = xmlNodeGetChildren(groupNode)

@@ -9,7 +9,7 @@
 	</languages>
 	
 	<!-- Default skins (Randomly selected after register)-->
-	<defaultskins>
+	<defaultSkins>
 		<male>
 			<skin>2</skin>
 			<skin>6</skin>
@@ -24,10 +24,10 @@
 			<skin>190</skin>
 			<skin>193</skin>
 		</female>
-	</defaultskins>
+	</defaultSkins>
 	
 	<!-- Camera locations used for moving camera while login/register -->
-	<logincameramovements>
+	<loginCameraMovements>
 		<group>
 			<location time="0" easingType="">ls1</location>
 			<location time="5000" easingType="Linear">ls2</location>
@@ -44,7 +44,7 @@
 			<location time="10000" easingType="OutQuad">ls_groovestreet_gangbase2</location>
 			<location time="10000" easingType="InQuad">ls_groovestreet_gangbase3</location>
 		</group>
-	</logincameramovements>
+	</loginCameraMovements>
 	
 	<!-- Chat configuration -->
 	<chat>

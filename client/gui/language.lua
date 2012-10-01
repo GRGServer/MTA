@@ -2,7 +2,7 @@
 -- @param event The event which should be trigger once the player selected the language
 function createLanguageSelectionWindow(event)
 	local screenWidth, screenHeight = guiGetScreenSize()
-	local languageNodes = xmlNodeGetChildren(xmlFindChild(configXmlRootNode, "languages", 0)) -- Get available languages
+	local languageNodes = readConfig("languages") -- Get available languages
 	
 	-- Create the window
 	local window = guiCreateWindow(0, 0, screenWidth, screenHeight, translateString("Select language"), false)

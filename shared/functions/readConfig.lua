@@ -10,5 +10,10 @@ function readConfig(path)
 			return
 		end
 	end
-	return xmlNodeGetValue(node)
+	local childNodes = xmlNodeGetChildren(node)
+	if childNodes and #childNodes > 0 then -- Check if there are child nodes
+		return childNodes -- Return table containing all child nodes
+	else
+		return xmlNodeGetValue(node) -- Return node value
+	end
 end
