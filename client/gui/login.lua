@@ -20,7 +20,7 @@ function createLoginWindow()
 	guiEditSetMasked(passwordField, true) --  Make it masked (Show * instead of the cleartext password)
 	
 	-- Buttons
-	local loginButton = guiCreateButton(120, 110, 80, 30, translateString("Login"), false, loginWindow)
+	loginButton = guiCreateButton(120, 110, 80, 30, translateString("Login"), false, loginWindow)
 	local cancelButton = guiCreateButton(210, 110, 80, 30, translateString("Cancel"), false, loginWindow)
 	
 	-- Add event handlers
@@ -30,6 +30,7 @@ function createLoginWindow()
 				createMessageBox(translateString("Login error"), translateString("You have to enter your password!"), nil, loginWindow)
 				return
 			end
+			guiSetEnabled(loginButton, false)
 			triggerServerEvent("onSubmitLogin", localPlayer, guiGetText(passwordField))
 		end
 	, false)

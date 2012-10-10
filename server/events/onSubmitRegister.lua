@@ -12,10 +12,10 @@ addEventHandler("onSubmitRegister", getRootElement(),
 			local objectId = mysqlConnection:insert_id()
 			if objectId > 0 then -- Registration step 2 was successful if the objectId is > 0
 				addObjectToGroup(getGroupIdByName("tutorial"), objectId) -- Add the player to the tutorial group
-				triggerClientEvent(source, "onRegisterDone", getRootElement(), true) -- Successful
+				triggerClientEvent(source, "onRegisterDone", source, true) -- Successful
 				return
 			end
 		end
-		triggerClientEvent(source, "onRegisterDone", getRootElement(), false) -- Failed
+		triggerClientEvent(source, "onRegisterDone", source, false) -- Failed
 	end
 )

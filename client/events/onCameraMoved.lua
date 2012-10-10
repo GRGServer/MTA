@@ -8,7 +8,7 @@ addEventHandler("onCameraMoved", getRootElement(),
 		if extraData.moveCameraToNextGroupLocation then
 			moveCameraToNextGroupLocation(extraData.moveCameraToNextGroupLocation)
 		elseif extraData.triggeredByServer then
-			triggerServerEvent("onCameraMoved", getRootElement(), extraData)
+			triggerServerEvent("onCameraMoved", localPlayer, extraData)
 		end
 	end
 )

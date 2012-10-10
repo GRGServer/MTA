@@ -18,6 +18,7 @@ addEventHandler("onRegisterDone", getRootElement(),
 				end
 			, 2000, 1)
 		else
+			guiSetEnabled(registerButton, false)
 			createMessageBox(translateString("Register error"), translateString("Something goes wrong... Try it again."), nil, registerWindow)
 		end
 	end

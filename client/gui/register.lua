@@ -77,7 +77,7 @@ function createRegisterWindow()
 	guiComboBoxAddItem(genderField, translateString("Female"))
 	
 	-- Buttons
-	local registerButton = guiCreateButton(windowWidth - 180, 200, 80, 30, translateString("Register"), false, registerWindow)
+	registerButton = guiCreateButton(windowWidth - 180, 200, 80, 30, translateString("Register"), false, registerWindow)
 	local backButton = guiCreateButton(windowWidth - 90, 200, 80, 30, translateString("Back"), false, registerWindow)
 	
 	-- Add event handlers
@@ -108,6 +108,7 @@ function createRegisterWindow()
 			elseif guiComboBoxGetSelected(genderField) == 1 then
 				gender = "female"
 			end
+			guiSetEnabled(registerButton, false)
 			triggerServerEvent("onSubmitRegister", localPlayer, language, guiGetText(passwordField), guiComboBoxGetSelected(birthDateDayField) + 1, guiComboBoxGetSelected(birthDateMonthField) + 1, currentYear - guiComboBoxGetSelected(birthDateYearField), gender)
 		end
 	, false)

@@ -7,9 +7,9 @@ addEventHandler("onSubmitLogin", getRootElement(),
 		local row = mysqlResult:fetch_assoc()
 		if (row) then
 			mysqlConnection:query("UPDATE `users` SET `loginTime` = NOW() WHERE `id` = '" .. row.id .. "'")
-			triggerClientEvent(source, "onLoginDone", getRootElement(), true)
+			triggerClientEvent(source, "onLoginDone", source, true)
 		else
-			triggerClientEvent(source, "onLoginDone", getRootElement(), false)
+			triggerClientEvent(source, "onLoginDone", source, false)
 		end
 	end
 )

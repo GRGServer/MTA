@@ -18,6 +18,7 @@ addEventHandler("onLoginDone", getRootElement(),
 				end
 			, 2000, 1)
 		else
+			guiSetEnabled(loginButton, true)
 			createMessageBox(translateString("Login error"), translateString("Login failed!\n\nPlease check your password!"), nil, loginWindow)
 		end
 	end
