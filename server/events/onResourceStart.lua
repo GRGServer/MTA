@@ -9,6 +9,7 @@ addEventHandler("onResourceStart", getResourceRootElement(getThisResource()),
 		loadLanguageStrings() -- Load language strings
 		loadCameraLocations() -- Load camera locations
 		loadNPCTasks() -- Load NPC tasks
+		loadCommandList() -- Load all available commands
 		
 		-- Check if the server is running in development mode
 		if isDevMode() then

@@ -148,4 +148,16 @@
 		<en>You have not the permission to use this function!</en>
 		<de>Du hast nicht die Berechtigung um diese Funktion zu verwenden!</de>
 	</string>
+	<string>
+		<en>Command list</en>
+		<de>Befehlsliste</de>
+	</string>
+	<string>
+		<en>Command</en>
+		<de>Befehl</de>
+	</string>
+	<string>
+		<en>Description</en>
+		<de>Beschreibung</de>
+	</string>
 </languagestrings>

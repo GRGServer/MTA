@@ -1,0 +1,36 @@
+﻿<commands>
+	<commandList>
+		<checkpermissions>
+			<description>Show your current permissions.</description>
+		</checkpermissions>
+		<cmds>
+			<description>Show a list of available commands.</description>
+		</cmds>
+		<maptp>
+			<description>Show a map in which you can select the target to which you want to teleport to.</description>
+		</maptp>
+	</commandList>
+	
+	<groupList>
+		<group>
+			<name>Permissions</name>
+			<description>Commands to manage permissions.</description>
+			<subitems>
+				<command>checkpermissions</command>
+			</subitems>
+		</group>
+		<group>
+			<name>Help</name>
+			<description>Get help</description>
+			<subitems>
+				<command>about</command>
+				<command>cmds</command>
+				<command>help</command>
+			</subitems>
+		</group>
+		<group>
+			<name>Miscellaneous</name>
+			<description>Miscellaneous commands which don't fit in another category</description>
+		</group>
+	</groupList>
+</commands>
